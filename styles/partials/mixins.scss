@@ -1,0 +1,73 @@
+@use "./global.scss" as *;
+
+//mixin
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin display {
+  display: $display;
+}
+
+@mixin background {
+  background-color: $primary-color1;
+  color: $primary-color2;
+}
+
+@mixin phone-font1 {
+  font-size: $font-size1;
+  line-height: $line-height1;
+}
+
+@mixin phone-font2 {
+  font-size: $font-size2;
+  line-height: $line-height2;
+}
+
+@mixin phone-font3 {
+  font-size: $font-size3;
+  line-height: $line-height3;
+}
+
+@mixin phone-font4 {
+  font-size: $font-size4;
+  line-height: $line-height4;
+}
+
+@mixin tablet-font1 {
+  font-size: $font-size5;
+  line-height: $line-height5;
+}
+
+@mixin tablet-font2 {
+  font-size: $font-size6;
+  line-height: $line-height6;
+}
+
+@mixin tablet-font3 {
+  font-size: $font-size1;
+  line-height: $line-height1;
+}
+
+@mixin tablet-font4 {
+  font-size: $font-size2;
+  line-height: $line-height2;
+}
+
+@mixin tablet-font5 {
+  font-size: $font-size2;
+  line-height: $line-height4;
+}
+
+@mixin tablet-font6 {
+  font-size: $font-size7;
+  line-height: $line-height4;
+}

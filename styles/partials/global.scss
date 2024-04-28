@@ -1,0 +1,85 @@
+//primary color
+$primary-color1: #323232;
+$primary-color2: #afafaf;
+$primary-color3: #ffffff;
+
+//secondary color
+$secondary-color1: #000000;
+$secondary-color2: #e1e1e1;
+$secondary-color3: #fafafa;
+
+//screen
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+//display
+$display: flex;
+
+//font
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$font-size1: 24px;
+$font-size2: 14px;
+$font-size3: 13px;
+$font-size4: 10px;
+$font-size5: 60px;
+$font-size6: 36px;
+$font-size7: 12px;
+
+$line-height1: 32px;
+$line-height2: 22px;
+$line-height3: 18px;
+$line-height4: 20px;
+$line-height5: 68px;
+$line-height6: 44px;
+
+body {
+  font-family: "Avenir Next";
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+h1 {
+  font-family: "Avenir Next";
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Avenir Next";
+  font-weight: 600;
+}
+
+h4 a {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+p {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+button {
+  font-family: "Avenir Next";
+  font-weight: 700;
+}

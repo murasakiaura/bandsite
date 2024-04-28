@@ -1,0 +1,487 @@
+@use "./partials/global.scss" as *;
+@use "./partials/mixins.scss" as *;
+
+//navbar
+.navbar {
+  @include display;
+  @include background;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+
+  @include tablet {
+    justify-content: left;
+    flex-direction: row;
+    padding: 1.5rem 2.25rem 0 2.25rem;
+  }
+
+  @include desktop {
+    justify-content: left;
+    flex-direction: row;
+    padding: 1.5rem 4rem 0 4rem;
+  }
+
+  &__imgcontainer {
+    @include display;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__title {
+    @include display;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0 0 1rem;
+
+    @include phone-font3;
+
+    @include tablet {
+      width: 20rem;
+      flex-direction: row;
+      @include tablet-font4;
+      padding: 0 2.25rem 0 2.25rem;
+    }
+
+    @include desktop {
+      width: 20rem;
+      flex-direction: row;
+      @include tablet-font4;
+    }
+
+    &--links {
+      @include display;
+      padding: 0;
+      height: 100%;
+      width: 50%;
+      text-align: center;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+
+      &-item {
+        text-align: center;
+        & a {
+          @include tablet-font5;
+          padding: 1rem 0 1rem 0;
+          display: block;
+          text-decoration: none;
+          width: 50vw;
+          letter-spacing: 0.03rem;
+          color: $secondary-color2;
+
+          @include tablet {
+            width: auto;
+            padding-bottom: 1.5rem;
+          }
+
+          @include desktop {
+            width: auto;
+            padding-bottom: 1.5rem;
+          }
+        }
+        & a:hover {
+          color: $primary-color3;
+          border-bottom: $primary-color3 solid 0.3rem;
+        }
+      }
+      &-item a.active {
+        font-weight: 600;
+        height: 100%;
+        color: $primary-color3;
+        border-bottom: $primary-color3 solid 0.3rem;
+      }
+    }
+  }
+}
+
+//hero
+.hero {
+  @include phone-font2;
+  background-image: url("../assets/Images/hero-bio.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  margin: 0;
+
+  @include display;
+  align-items: center;
+  color: $primary-color3;
+  padding: 0 0 0 1rem;
+  justify-content: left;
+  position: relative;
+
+  @include tablet {
+    @include tablet-font2;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+  }
+
+  @include desktop {
+    @include tablet-font2;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    padding: 0;
+  }
+
+  &__background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.5);
+  }
+
+  @include tablet {
+    background-color: $primary-color1;
+    top: 0;
+    left: 0;
+    height: 35.5rem;
+  }
+
+  @include desktop {
+    background-color: $primary-color1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45.5rem;
+  }
+
+  &__title {
+    z-index: 10;
+
+    @include tablet {
+      margin: 0;
+      padding-left: 2.25rem;
+
+      @include desktop {
+        margin: 0;
+        padding: 0 0 0 4rem;
+      }
+    }
+  }
+}
+
+//main
+.main {
+  @include display;
+  &__part1-container {
+    padding: 1.5rem 1rem 0 1rem;
+
+    @include tablet {
+      padding: 0 2.25rem 0 2.25rem;
+    }
+
+    @include desktop {
+      padding: 0 4rem 0 4rem;
+    }
+
+    &--title {
+      @include phone-font1;
+      margin: 0;
+      padding: 0 0 1rem 0;
+
+      @include tablet {
+        @include tablet-font2;
+        padding: 3rem 0 2.25rem 0;
+      }
+
+      @include desktop {
+        @include tablet-font2;
+        padding: 3rem 0 2.25rem 0;
+      }
+    }
+
+    &--context {
+      @include tablet {
+        padding: 1rem 2rem 1rem 2rem;
+      }
+
+      @include desktop {
+        padding: 0 4rem 0 4rem;
+      }
+    }
+
+    &--img {
+      width: 100%;
+    }
+
+    &--text1 {
+      @include phone-font2;
+      margin: 1rem 0 0 0;
+
+      @include tablet {
+        @include tablet-font3;
+        width: 70%;
+      }
+
+      @include desktop {
+        @include tablet-font3;
+      }
+    }
+
+    &--text2 {
+      @include phone-font2;
+      margin: 0.25rem 0 0 0;
+
+      @include tablet {
+        @include tablet-font4;
+        padding-top: 1rem;
+      }
+
+      @include desktop {
+        @include tablet-font4;
+      }
+    }
+  }
+
+  &__part2-container {
+    padding: 0 1rem 0 1.5rem;
+
+    @include desktop {
+      padding: 0 4rem 0 4rem;
+    }
+
+    &--text3 {
+      @include phone-font2;
+
+      @include tablet {
+        @include tablet-font3;
+      }
+
+      @include desktop {
+        @include tablet-font3;
+      }
+    }
+
+    &--text4container {
+      @include tablet {
+        display: $display;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      @include desktop {
+        display: $display;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    &--text4 {
+      @include phone-font3;
+
+      @include tablet {
+        @include tablet-font4;
+      }
+
+      @include desktop {
+        @include tablet-font4;
+      }
+    }
+  }
+
+  &__part3-container {
+    background-color: $secondary-color3;
+    padding: 0 1rem 1rem 1.5rem;
+    margin: 0;
+
+    @include tablet {
+      padding: 0 2.25rem 0 2.25rem;
+    }
+
+    @include desktop {
+      padding: 0 4rem 0 4rem;
+    }
+
+    &--title {
+      @include phone-font1;
+      padding: 1rem 0 0 0;
+
+      @include tablet {
+        @include tablet-font2;
+        padding: 2.25rem 0 1.5rem 0;
+      }
+
+      @include desktop {
+        @include tablet-font2;
+        padding: 3rem 0 2.25rem 2.25rem;
+      }
+    }
+
+    &--imgcontainer {
+      @include display;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      @include tablet {
+        @include display;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 0 1rem 0;
+      }
+
+      @include desktop {
+        @include display;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+    }
+
+    &--img {
+      width: 100%;
+      padding-bottom: 1rem;
+
+      @include tablet {
+        margin: 0;
+        width: 30%;
+        padding-bottom: 1rem;
+
+        &-mid {
+          padding: 0 1rem 0 1rem;
+          padding-bottom: 1rem;
+        }
+      }
+
+      @include desktop {
+        width: 25vw;
+        filter: grayscale(100%);
+
+        &:hover {
+          filter: none;
+        }
+
+        &-mid {
+          padding: 0 2rem 1rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+//footer
+.footer {
+  background-color: $primary-color1;
+  padding: 1rem 1rem 1rem 1rem;
+  color: $primary-color3;
+
+  @include tablet {
+    padding: 1.5rem 2.25rem 1.5rem 2.25rem;
+    position: relative;
+    height: 100%;
+  }
+
+  @include desktop {
+    padding: 1.5rem 6rem 3rem 6rem;
+    position: relative;
+    height: 100%;
+  }
+
+  &__part1 {
+    @include tablet {
+      display: $display;
+      flex-direction: row;
+      align-items: center;
+      &--icon {
+        padding-left: 1.5rem;
+      }
+    }
+
+    @include desktop {
+      display: $display;
+      flex-direction: row;
+      align-items: center;
+
+      width: 40%;
+    }
+
+    &--title {
+      @include phone-font1;
+    }
+
+    &--icon {
+      display: $display;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 7rem;
+      text-decoration: none;
+    }
+  }
+
+  &__part2 {
+    display: $display;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0 2rem 0;
+
+    @include tablet {
+      display: $display;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      display: $display;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 30%;
+    }
+
+    &--title {
+      @include phone-font3;
+
+      @include tablet {
+        @include tablet-font5;
+      }
+      @include desktop {
+        @include tablet-font5;
+      }
+    }
+
+    &--info {
+      @include phone-font3;
+
+      @include tablet {
+        @include tablet-font5;
+      }
+      @include desktop {
+        @include tablet-font5;
+      }
+    }
+  }
+  &__part3 {
+    &--logo {
+      padding: 1rem 0 1rem 0;
+
+      @include tablet {
+        position: absolute;
+        top: 1.1rem;
+        right: 3rem;
+      }
+
+      @include desktop {
+        position: absolute;
+        top: 2rem;
+        right: 8rem;
+      }
+    }
+  }
+}
