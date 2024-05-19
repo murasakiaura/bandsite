@@ -7,6 +7,7 @@ $primary-color3: #ffffff;
 $secondary-color1: #000000;
 $secondary-color2: #e1e1e1;
 $secondary-color3: #fafafa;
+$secondary-color4: #D22D2D;
 
 //screen
 $tablet-breakpoint: 768px;
@@ -19,21 +20,21 @@ $display: flex;
 
 @font-face {
   font-family: "Avenir Next";
-  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
+  src: url("/assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Avenir Next";
-  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("/assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Avenir Next";
-  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+  src: url("/assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
@@ -77,9 +78,20 @@ h4 a {
 p {
   font-family: "Avenir Next";
   font-weight: 400;
+  margin:0;
+}
+
+input {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+textarea {
+  font-family: "Avenir Next";
+  font-weight: 400;
 }
 
 button {
   font-family: "Avenir Next";
-  font-weight: 700;
+  font-weight: 600;
 }

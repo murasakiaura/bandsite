@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/styles/shows.css" rel="stylesheet" />
+    <link href="/styles/partials/global.css" rel="stylesheet" />
+    <link href="/styles/partials/mixins.css" rel="stylesheet" />
+  </head>
+  <body>
+    <body>
+      <!--part1 nav-->
+      <nav class="navbar">
+        <div class="navbar__imgcontainer">
+          <img
+            class="navbar__imgcontainer--img"
+            src="/assets/Logo/Logo-bandsite.svg"
+          />
+        </div>
+        <div class="navbar__title">
+          <ul class="navbar__title--links">
+            <li class="navbar__title--links-item">
+              <a href="/index.html">Biography</a>
+            </li>
+            <li class="navbar__title--links-item">
+              <a class="active" href="#shows">Shows</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--part2 hero-->
+      <div class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__title">
+          <h4 class="hero__title--part1">Beautiful Beasts Album</h4>
+          <div class="hero__titleimg">
+            <h1 class="hero__title--part2">
+              Stripes of Yellow x <br />
+
+              For The Stings
+            </h1>
+            <iframe
+              class="hero__iframe"
+              width="100%"
+              height="100"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89350110&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/cashmerecat"
+                title="CASHMERE CAT"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >CASHMERE CAT</a
+              >
+              ·
+              <a
+                href="https://soundcloud.com/cashmerecat/do-you-cashmere-cat-remix"
+                title="Miguel - Do You… (Cashmere Cat Remix)"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Miguel - Do You… (Cashmere Cat Remix)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--part3 main-->
+      <main class="main">
+        <h1 class="main__title">Shows</h1>
+        <div id="shows-container"></div>
+      </main>
+
+      <!--part4 footer-->
+      <footer class="footer">
+        <!--footer part1-->
+        <div class="footer__part1">
+          <h1 class="footer__part1--title">Get in Touch</h1>
+          <div class="footer__part1--icon">
+            <a href="https://www.instagram.com/">
+              <img src="/assets/Icons/SVG/Icon-instagram.svg" alt="instagram" />
+            </a>
+
+            <a href="https://www.facebook.com/">
+              <img src="/assets/Icons/SVG/Icon-facebook.svg" alt="facebook" />
+            </a>
+
+            <a href="https://twitter.com/?lang=en">
+              <img src="/assets/Icons/SVG/Icon-twitter.svg" alt="twitter" />
+            </a>
+          </div>
+        </div>
+        <!--footer part2-->
+        <div class="footer__part2">
+          <div>
+            <h4 class="footer__part2--title">The Bees Knees Management</h4>
+            <p class="footer__part2--info">
+              503 Broadway Penthouse,<br />
+              New York, NY 10012, USA
+            </p>
+            <p class="footer__part2--info">info@thebeesknees.com</p>
+          </div>
+          <div>
+            <h4 class="footer__part2--title">Limitless Artist Group</h4>
+            <p class="footer__part2--info">
+              Booking Agent for<br />
+              US / South America / Japan
+            </p>
+            <p class="footer__part2--info">bookings@limitlessag.com</p>
+          </div>
+          <div>
+            <h4 class="footer__part2--title">ARCH Entertainment</h4>
+            <p class="footer__part2--info">
+              Booking Agent for<br />
+              UK / EU / AU
+            </p>
+            <p class="footer__part2--info">bookings@archentertainment.com</p>
+          </div>
+        </div>
+        <!--footer part3-->
+        <div class="footer__part3">
+          <img
+            class="footer__part3--logo"
+            src="/assets/Logo/Logo-bandsite.svg"
+          />
+        </div>
+        <p class="footer__part2--info">
+          Copyright The Bees Knees © 2023 All Rights Reserved
+        </p>
+      </footer>
+      <script src="/scripts/build-shows-page.js"></script>
+    </body>
+  </body>
+</html>
