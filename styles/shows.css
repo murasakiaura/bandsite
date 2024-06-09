@@ -278,6 +278,7 @@ button {
     font-size: 60px;
     line-height: 68px;
     font-weight: 600;
+    margin-right: 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -303,6 +304,13 @@ button {
     padding: 1.5rem 2.25rem 0 2.25rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .main__title {
   font-size: 24px;
   line-height: 32px;
@@ -322,6 +330,13 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  #shows-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 .show-card {
@@ -350,8 +365,9 @@ button {
   .show-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem 1.125rem 1.5rem 1.125rem;
+    width: 100%;
   }
 }
 
@@ -391,7 +407,7 @@ button {
 @media screen and (min-width: 1024px) {
   .show-part1 {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
 
@@ -411,7 +427,7 @@ button {
 @media screen and (min-width: 1024px) {
   .show-part2 {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
 
@@ -431,7 +447,7 @@ button {
 @media screen and (min-width: 1024px) {
   .show-part3 {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 3rem 0 1.5rem;
   }
 }
 

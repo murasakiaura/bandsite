@@ -436,7 +436,8 @@
     }
 
     @include desktop {
-      margin-left: 30%;
+      margin: 0;
+      justify-content: center;
     }
   }
 
@@ -478,6 +479,11 @@
     flex-direction: column;
     width: 70rem;
     margin: 0;
+
+    @include desktop {
+      @include display;
+      justify-content: center;
+    }
   }
 
   &__part4-buttoncontainer {
@@ -488,7 +494,7 @@
 
     @include desktop {
       @include display;
-      justify-content: right;
+      justify-content: center;
     }
   }
 }
@@ -504,7 +510,7 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin-left: 30%;
+    margin-left: 45%;
   }
 }
 

@@ -201,6 +201,7 @@
       @include desktop {
         @include tablet-font1;
         font-weight: 600;
+        margin-right: 2.25rem;
       }
     }
   }
@@ -230,6 +231,12 @@
     padding: 1.5rem 2.25rem 0 2.25rem;
   }
 
+  @include desktop {
+    @include display;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   &__title {
     @include phone-font1;
     padding: 1.5rem 0 0.5rem 1rem;
@@ -247,6 +254,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin: 0;
+
+  @include desktop {
+    @include display;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 .show-card {
@@ -274,8 +287,9 @@
   @include desktop {
     @include display;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem 1.125rem 1.5rem 1.125rem;
+    width: 100%;
   }
 }
 
@@ -310,7 +324,7 @@
 
   @include desktop {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
 
@@ -328,7 +342,7 @@
 
   @include desktop {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
 
@@ -346,7 +360,7 @@
 
   @include desktop {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 3rem 0 1.5rem;
   }
 }
 
